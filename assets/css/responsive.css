@@ -1,1 +1,22 @@
 /*css for responsiveness of all pages*/
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+    header .hamburger{
+        display: flex;
+    }
+    .mobile{
+        display: none;
+    }
+    header nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header nav ul li img{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
