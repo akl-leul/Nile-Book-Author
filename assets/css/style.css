@@ -23,19 +23,18 @@
     width: 100%;
     height: fit-content;
     font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    top: 10px;
+    font-weight: 600; 
     font-size: 16px;
     z-index: 9999;
     border-bottom: 1px solid var(--neutral-color);
   }
-  header nav{
+  header .nav{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  header nav ul{
+  header .nav ul{
     display: flex;
     list-style: none;
     justify-content: space-around;
