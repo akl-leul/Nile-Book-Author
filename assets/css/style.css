@@ -182,3 +182,20 @@ footer div button{
         transform: translateY(10px);  
     }
   }
+  .search-results{
+    position: absolute;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    right: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .search-results{
+        width: 90%;
+        right: 0;
+    }
+  }

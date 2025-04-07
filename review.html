@@ -58,14 +58,21 @@
                   
                   
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex" id="searchForm">
+                  <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                
               </div>
             </div>
           </nav>
     </header>
+    <div id="searchResults" class="search-results mt-3" style="display:none;">
+      <h3>Search Results</h3>
+      <ul id="resultsList" class="list-group">
+        <!-- Search results will appear here -->
+      </ul>
+    </div>
     <div class="backtotop">
       <a href="#nav" class="btn btn-primary" id="back-to-top">
           <i class="fa-solid fa-arrow-up"></i>

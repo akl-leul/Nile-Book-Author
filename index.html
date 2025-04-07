@@ -60,14 +60,23 @@
                   
                   
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <form class="d-flex" id="searchForm">
+                  <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                
+               
+                
               </div>
             </div>
-          </nav>
+        </nav>
     </header> 
+    <div id="searchResults" class="search-results mt-3" style="display:none;">
+      <h3>Search Results</h3>
+      <ul id="resultsList" class="list-group">
+        <!-- Search results will appear here -->
+      </ul>
+    </div>
     <br>
 <div class="backtotop">
     <a href="#nav" class="btn btn-primary" id="back-to-top">
@@ -117,7 +126,7 @@
         </div>
         <div class="row align-items-start card-row">
           <div class="col justify-content-center">
-            <div class="card"  >
+            <div id="rich-dad-poor-dad" class="card"  >
               <img src="assets/img/rich-dad-poor-dad.png" height="300px" class="card-img-top" alt="image of rich dad poor dad">
               <div class="card-body">
                 <h5 class="card-title">Rich Dad Poor Dad</h5>
@@ -136,7 +145,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card"  >
+            <div id="Persuasion" class="card"  >
               <img src="assets/img/Persuasion.png" height="300px"   class="card-img-top" alt="image of Persuasion">
               <div class="card-body">
                 <h5 class="card-title">Persuasion</h5>
@@ -155,7 +164,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card">
+            <div id="Psychology of Money" class="card">
               <img src="assets/img/the-pyscholog-of-money.jpeg" height="300px"   class="card-img-top" alt="image of the psychology of money">
               <div class="card-body">
                 <h5 class="card-title">Psychology of Money</h5>
@@ -301,7 +310,7 @@
     </div>
 
     <br>
-    <div class="container">
+    <div class="container" id="contact">
       <div class="row  justify-content-center">
         <div class="col  align-items-center justify-content-center">
          <h3 class="text-center"> 
