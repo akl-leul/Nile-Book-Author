@@ -51,7 +51,7 @@ function displayReview(review) {
   const container = document.createElement('div');
   container.className = 'review';
   container.innerHTML = `
-    <h3>${review.bookTitle}</h3>
+    <h3>${review.bookTitle}</h3><br>
     <p>${review.text}</p>
     <div class="stars">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
     <small>By ${review.name} on ${review.date}</small>
