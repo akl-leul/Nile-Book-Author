@@ -109,10 +109,9 @@ body {
     transition: all 0.5s ease;
     z-index: 5;
  }
- .card:not(:hover) {
-    background-color: #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1);
+ .card:not(:hover) { 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: #f9f9f9;
   }
  .accordion button{
     font-weight: 600;
