@@ -207,3 +207,49 @@ footer div button{
         right: 0;
     }
   }
+  .book-image {
+    width: 100%;
+    height: auto;
+}
+
+.book-card {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.book-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.author-image {
+    width: 50px;
+    aspect-ratio: 1;
+    clip-path: circle();
+    margin: 10px;
+}
+
+.book-details {
+    margin-top: 20px;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover {
+    color: #007bff;
+}
+#book-title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 

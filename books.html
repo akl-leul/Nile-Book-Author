@@ -69,8 +69,14 @@
         </div>
     </nav>
   </header>
-  <div id="searchResults" class="search-results mt-3" style="display:none;">
-    <h3>Search Results</h3>
+  <div id="searchResults" class="search-results mt-3" style="display:none;" >
+    <div class="d-flex justify-content-around align-items-center">
+      <h3><i class="fa-solid fa-square-poll-vertical"></i> Search Results</h3> <button type="button" class="btn-close" onclick="
+      document.getElementById('searchResults').style.display='none';
+      " aria-label="Close"></button>
+    </div>
+   
+
     <ul id="resultsList" class="list-group">
       <!-- Search results will appear here -->
     </ul>
@@ -80,10 +86,153 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
 </div>
-<h1>
-  books
-</h1>
+ 
+ 
+</head>
 
+<body>
+ <br>
+  <div class="container-fluid">
+    <div class="row">
+        <!-- Left Sidebar (Category Filters) -->
+        <div class="col-md-2">
+            <div class="sidebar">
+                <h4>Filter by Category</h4>
+                <form id="category-form">
+                  <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <h5>Genre</h5>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="form-group">
+                    
+                            <input type="radio" name="category" value="Fantasy" id="genre" class="form-check-input" onclick="filterBooks('genre', 'Fantasy')"> Fantasy<br>
+                            <input type="radio" name="category" value="Science Fiction" id="genre2" class="form-check-input" onclick="filterBooks('genre', 'Science Fiction')"> Science Fiction<br>
+                            <input type="radio" name="category" value="Historical Fiction" id="genre3" class="form-check-input" onclick="filterBooks('genre', 'Historical Fiction')"> Historical Fiction<br>
+                            <input type="radio" name="category" value="Mystery" id="genre4" class="form-check-input" onclick="filterBooks('genre', 'Mystery')"> Mystery<br>
+                            <input type="radio" name="category" value="Thriller" id="genre5" class="form-check-input" onclick="filterBooks('genre', 'Thriller')"> Thriller<br>
+                            <input type="radio" name="category" value="Romance" id="genre6" class="form-check-input" onclick="filterBooks('genre', 'Romance')"> Romance<br> 
+                            <input type="radio" name="category" value="Personal Finance" id="genre14" class="form-check-input" onclick="filterBooks('genre', 'Personal Finance')"> Personal Finance<br>
+                            <input type="radio" name="category" value="Self-help" id="genre15" class="form-check-input" onclick="filterBooks('genre', 'Self-help')"> Self-help<br> 
+                        </div>  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                          <h5>Author</h5>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="form-group"> 
+                            <input type="radio" name="category" value="Robert Kiyosaki" id="author1" class="form-check-input" onclick="filterBooks('authorName', 'Robert Kiyosaki')"> Robert Kiyosaki<br>
+                            <input type="radio" name="category" value="J.K. Rowling" id="author2" class="form-check-input" onclick="filterBooks('authorName', 'J.K. Rowling')"> J.K. Rowling<br>
+                            <input type="radio" name="category" value="George Orwell" id="author3" class="form-check-input" onclick="filterBooks('authorName', 'George Orwell')"> George Orwell<br>
+                            <input type="radio" name="category" value="Chinua Achebe" id="author4" class="form-check-input" onclick="filterBooks('authorName', 'Chinua Achebe')"> Chinua Achebe<br>   
+                            <input type="radio" name="category" value="Nega Mezlekia" id="author13" class="form-check-input" onclick="filterBooks('authorName', 'Nega Mezlekia')"> Nega Mezlekia<br> 
+                        </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                          <h5>Language</h5>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="form-group"> 
+                            <input type="radio" name="category" value="English" id="language1" class="form-check-input" onclick="filterBooks('language', 'English')"> English<br>
+                            <input type="radio" name="category" value="Spanish" id="language2" class="form-check-input" onclick="filterBooks('language', 'Spanish')"> Spanish<br>
+                            <input type="radio" name="category" value="French" id="language3" class="form-check-input" onclick="filterBooks('language','French' )"> French<br>
+                            <input type="radio" name="category" value="Amharic" id="language4" class="form-check-input" onclick="filterBooks('language', 'Amharic')"> Amharic<br>
+                            <input type="radio" name="category" value="Arabic" id="language5" class="form-check-input" onclick="filterBooks('language', 'Arabic')"> Arabic<br>
+                        </div>
+                        
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          <h5>Rating</h5>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="form-group">
+                          
+                            <input type="radio" name="category" value="rating" id="rating1" class="form-check-input" onclick="filterBooks('rating', '1.0-1.9')"> 1.0 - 1.9<br>
+<input type="radio" name="category" value="rating" id="rating2" class="form-check-input" onclick="filterBooks('rating', '2.0-2.9')"> 2.0 - 2.9<br>
+<input type="radio" name="category" value="rating" id="rating3" class="form-check-input" onclick="filterBooks('rating', '3.0-3.9')"> 3.0 - 3.9<br>
+<input type="radio" name="category" value="rating" id="rating4" class="form-check-input" onclick="filterBooks('rating', '4.0-4.9')"> 4.0 - 4.9<br>
+<input type="radio" name="category" value="rating" id="rating5" class="form-check-input" onclick="filterBooks('rating', '5.0-5.0')"> 5.0<br>
+  </div>
+                        
+                        
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                     
+                     
+                </form>
+            </div>
+        </div>
+
+        <!-- Middle (Books List) -->
+        <div class="col-md-6"> 
+            <div class="row" id="books-list">
+                <!-- Book list items will be generated here dynamically -->
+            </div>
+        </div>
+
+        <!-- Right Sidebar (Book Details) -->
+        <div class="col-md-4">
+            <div id="book-details" class="book-details">
+                <h3>Book Details</h3>
+                <div id="book-title"></div>
+                <div id="book-description" class="book-description"></div>
+                <div id="book-author" class="d-flex align-items-center">
+                    <img src="" alt="Author Image" class="author-image" id="author-image">
+                    
+                    <div id="author-name"></div>
+                </div>
+                <div id="book-meta">
+                    <ul class="list-unstyled">
+                        <li><strong>Genre:</strong> <span id="book-genre"></span></li>
+                        <li><strong>Language:</strong> <span id="book-language"></span></li>
+                        <li><strong>Format:</strong> <span id="book-format"></span></li>
+                        <li><strong>Publication Year:</strong> <span id="book-year"></span></li>
+                        <li><strong>Rating:</strong> <span id="book-rating"></span></li>
+                    </ul>
+                    <img src="" alt="Book Image" class="book-image" id="book-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ 
   <footer>
     <div class="container">
       <div class="row">
@@ -145,5 +294,6 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/books.js"></script>
 </body>
 </html>

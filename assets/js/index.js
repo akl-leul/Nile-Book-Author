@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to search across multiple pages
     function searchAcrossPages(query) {
       // List of pages to search in
-      const pages = ['index.html', 'books.html', 'review.html', 'about.html', 'contact.html'];
+      const pages = ['index.html', 'books.html', 'review.html', 'about.html', 'contact.html', 'assets/js/books.js' ];
       let resultsFound = false;
   
       // Clear previous results
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const doc = parser.parseFromString(html, 'text/html');
   
             // Find all relevant elements to search in
-            const elementsToSearch = doc.querySelectorAll('h1, h2, p, div, h3, h4, h5, h6, article, li, ul, ol, span, footer, form');
+            const elementsToSearch = doc.querySelectorAll('h1, h2, img, p, div, h3, h4, h5, h6, article, li, ul, ol, span, footer, form');
             let pageMatches = [];
   
             // Construct a case-insensitive exact word match regex
@@ -120,3 +120,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 2000);
     }
   });
+
+  

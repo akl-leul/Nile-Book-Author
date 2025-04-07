@@ -69,8 +69,14 @@
         </div>
       </nav>
     </header>
-    <div id="searchResults" class="search-results mt-3" style="display:none;">
-      <h3>Search Results</h3>
+    <div id="searchResults" class="search-results mt-3" style="display:none;" >
+      <div class="d-flex justify-content-around align-items-center">
+        <h3><i class="fa-solid fa-square-poll-vertical"></i> Search Results</h3> <button type="button" class="btn-close" onclick="
+        document.getElementById('searchResults').style.display='none';
+        " aria-label="Close"></button>
+      </div>
+     
+
       <ul id="resultsList" class="list-group">
         <!-- Search results will appear here -->
       </ul>
