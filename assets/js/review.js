@@ -28,7 +28,6 @@ function submitReview() {
     alert("Please fill in all required fields and select a rating.");
     return;
   }
-
   const review = {
     name,
     bookTitle,
@@ -53,9 +52,10 @@ function displayReview(review) {
   container.className = 'review';
   container.innerHTML = `
     <h3>${review.bookTitle}</h3>
-    <div class="stars">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
     <p>${review.text}</p>
-    <small>by ${review.name} on ${review.date}</small>
+    <div class="stars">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</div>
+    <small>By ${review.name} on ${review.date}</small>
+
   `;
   const list = document.getElementById('reviewList');
   list.insertBefore(container, list.firstChild);
