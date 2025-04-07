@@ -252,7 +252,7 @@ function displayBooks() {
                     <img id="${generateRandomID()}" src="${book.image}" class="card-img-top" alt="${book.title}">
                     <div class="card-body">
                         <h5 class="card-title">${book.title}</h5>
-                        <p class="card-text"> By ${book.authorName}</p>
+                        <p class="card-text"> By <b> ${book.authorName}</b></p>
                     </div>
                     
                 </div>
