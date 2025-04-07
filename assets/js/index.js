@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (resultsFound) {
               searchResults.style.display = 'block';
             } else {
-              resultsList.innerHTML = '<li class="list-group-item">No results found.</li>';
+              resultsList.innerHTML = '<li class="list-group-item no"><i class="fa-solid fa-face-frown"></i> No results found.</li>';
               searchResults.style.display = 'block';
             }
           })

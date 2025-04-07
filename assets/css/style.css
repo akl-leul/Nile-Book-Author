@@ -188,10 +188,17 @@ footer div button{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 30%;
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
-    z-index: 10;
-    right: 0;
+    z-index: 100;
+    right: 20px;
+    padding: 10px;
+  }
+  .search-results .no{
+    color: red;
+  } 
+  .search-results .no i{
+    color: #ccc;
   }
   @media screen and (max-width: 768px) {
     .search-results{
