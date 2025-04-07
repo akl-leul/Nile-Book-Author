@@ -86,13 +86,14 @@ body {
   }
  nav{
     border-radius: 12px;
-    border: 3px solid #ccc;
+    border: 2px solid #ccc;
  }
  
  .card{
     margin-bottom: 20px;  
      text-align: left; 
      border-radius: 12px;
+     min-height: 300px;
  }
 
  .card-row{
@@ -104,9 +105,15 @@ body {
  }
  .card:hover{
     box-shadow: 0 0 20px #ccc;
-    transform: scale(1.02);
+    transform: scale(1.1);
     transition: all 0.5s ease;
+    z-index: 5;
  }
+ .card:not(:hover) {
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+  }
  .accordion button{
     font-weight: 600;
  }
