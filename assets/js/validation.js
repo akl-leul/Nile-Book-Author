@@ -12,8 +12,7 @@
     if (form.checkValidity() === false) {
       event.stopPropagation(); // Prevent form submission if not valid
     } else {
-      // Optionally handle the form submission here (e.g., via AJAX or form submission)
-      alert("Form submitted successfully!");
+      alert("🔔Message sent successfully!");
     }
 
     // Add Bootstrap validation classes

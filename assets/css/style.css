@@ -1,5 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
+body { 
+    font-family: "Poppins", sans-serif;
     background: #f9f9f9;
     margin: 0;
     padding: 20px;
@@ -86,9 +86,11 @@ body {
   }
  nav{
     border-radius: 12px;
-    border: 2px solid #ccc;
+    border: 2px solid #ccc; 
  }
- 
+ .navbar-toggler{
+    border: 1px solid red;
+ }
  .card{
     margin-bottom: 20px;  
      text-align: left; 
@@ -165,3 +167,18 @@ footer div button{
     bottom: 20px;
     right: 20px;
 }
+#downarrow a{
+    font-size: 1.7rem;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: movedwn 1s ease-in-out infinite alternate;
+}
+@keyframes movedwn {
+    0% {
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);  
+    }
+  }
