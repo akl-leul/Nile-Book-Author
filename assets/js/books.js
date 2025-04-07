@@ -267,7 +267,7 @@ function displayBooks() {
             bookCard.classList.add('col-md-4');
             bookCard.classList.add('mb-4');
             bookCard.innerHTML = `
-                <div class="card" onclick="showBookDetails('${bookKey}')">
+                <div class="card books" id="bks" onclick="showBookDetails('${bookKey}')">
     <img id="${generateRandomID()}" src="${book.image}" class="card-img-top" alt="${book.title}">
     <div class="card-body">
         <h5 class="card-title">${book.title}</h5>
