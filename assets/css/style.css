@@ -10,7 +10,7 @@ body {
     color: #333;
   }
   
-  .container {
+  .review-container {
     max-width: 800px;
     margin: auto;
   }
@@ -72,4 +72,46 @@ body {
   .review small {
     color: #777;
   }
+  .arrow{
+    animation: move 1s ease-in-out infinite alternate;
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+ nav{
+    border-radius: 12px;
+    border: 3px solid #ccc;
+ }
+ 
+ .card{
+    margin-bottom: 20px;  
+     text-align: left; 
+     border-radius: 12px;
+ }
+
+ .card-row{
+    text-align: left;
+ }
   
+ .row-row p, .row-row h5{
+    text-align: left;
+ }
+ .card:hover{
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+ }
+ @media screen and (max-width: 768px) {
+   .card{
+    width: 98%;
+   }
+   .card-row{
+    display: flex;
+    flex-direction: column;
+   }
+ }
