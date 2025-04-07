@@ -229,6 +229,25 @@ function generateRandomID(length = 4) {
 
     return randomID;
 };
+function generateStarRating(rating) {
+    let stars = "";
+    let fullStars = Math.floor(rating); // Get the full stars based on the rating
+    let halfStars = (rating % 1 >= 0.5) ? 1 : 0; // Check if we need a half star
+    let emptyStars = 5 - fullStars - halfStars; // Total of 5 stars
+
+    // Add full stars
+    stars += "★".repeat(fullStars);
+
+    // Add half star if needed
+    if (halfStars) {
+        stars += "☆";
+    }
+
+    // Add empty stars
+    stars += "☆".repeat(emptyStars);
+
+    return stars;
+};
 // Function to display books
 function displayBooks() {
     const booksListContainer = document.getElementById('books-list');
@@ -249,13 +268,16 @@ function displayBooks() {
             bookCard.classList.add('mb-4');
             bookCard.innerHTML = `
                 <div class="card" onclick="showBookDetails('${bookKey}')">
-                    <img id="${generateRandomID()}" src="${book.image}" class="card-img-top" alt="${book.title}">
-                    <div class="card-body">
-                        <h5 class="card-title">${book.title}</h5>
-                        <p class="card-text"> By <b> ${book.authorName}</b></p>
-                    </div>
-                    
-                </div>
+    <img id="${generateRandomID()}" src="${book.image}" class="card-img-top" alt="${book.title}">
+    <div class="card-body">
+        <h5 class="card-title">${book.title}</h5>
+        <p class="card-text"><small> By ${book.authorName} </small></p>
+        
+        <p class="star-rating">
+            ${generateStarRating(book.rating)}
+        </p>
+    </div>
+</div>
             `;
             booksListContainer.appendChild(bookCard);
         });
@@ -278,6 +300,7 @@ function showBookDetails(bookKey) {
     document.getElementById('book-rating').innerText = book.rating;
     document.getElementById('author-image').src = book.authorImage;
     document.getElementById('book-image').src = book.image;
+    document.getElementById('book-staring').innerHTML = generateStarRating(book.rating);
 }
 
 // Initialize display with all books
