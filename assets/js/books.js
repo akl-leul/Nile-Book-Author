@@ -268,7 +268,7 @@ function displayBooks() {
             bookCard.classList.add('mb-4');
             bookCard.innerHTML = `
                 <div class="card books" id="bks" onclick="showBookDetails('${bookKey}')">
-    <img id="${generateRandomID()}" src="${book.image}" class="card-img-top" alt="${book.title}">
+    <img id="${generateRandomID()}"  src="${book.image}" class="card-img-top" alt="${book.title}">
     <div class="card-body">
         <h5 class="card-title">${book.title}</h5>
         <p class="card-text"><small> By ${book.authorName} </small></p>
