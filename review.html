@@ -84,12 +84,9 @@
           <i class="fa-solid fa-arrow-up"></i>
       </a>
   </div>
-  <div class="container-fluid align-items-center" >
-        <br> 
-    <div class="row align-items-center">
-       
-      <div class="col"> 
-        <div class="review-form">
+  <div class="container-fluid">   
+    <div class="row align-items-start ">  
+      <div class="col">
           <h4><i class="fas fa-comment"></i> Leave a Review</h4>
           <input type="text" id="name" class="form-control mb-3" placeholder="Your Name (optional)">
           <input type="text" id="bookTitle" class="form-control mb-3" placeholder="Book Title" required>
@@ -102,20 +99,17 @@
           </div>
           <textarea id="reviewText" rows="5" class="form-control mb-3" placeholder="Write your review here..."></textarea>
           <button class="btn btn-primary" onclick="submitReview()">Submit Review</button>
-        </div>
-      </div>
-      
-   
-        <div class="col"><br><br>
+       
+      </div>   
+      <div class="col">
           <h5>Your Reviews</h5>
           <div class="reviews" id="reviewList">
-           
             <!-- Reviews will be injected here -->
           </div>
-        </div>
+      </div>
     </div>
         
-    </div>
+  </div>
       <footer>
         <div class="container">
           <div class="row">
