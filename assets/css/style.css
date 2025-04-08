@@ -274,5 +274,13 @@ footer div button{
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
   overflow-y: auto; 
-
+}
+.noresult{
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  color: #999;
+  height:70vh;
+  display: flex;
+  align-items: center; 
 }
