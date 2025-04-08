@@ -84,28 +84,38 @@
           <i class="fa-solid fa-arrow-up"></i>
       </a>
   </div>
-    <div class="review-container">
-        <h1>📚Book Reviews</h1>
-    
+  <div class="container-fluid review-container align-items-center" >
+        <br> 
+    <div class="row align-items-center">
+       
+      <div class="col"> 
         <div class="review-form">
-          <h2>Leave a Review</h2>
-          <input type="text" id="name" placeholder="Your Name (optional)">
-          <input type="text" id="bookTitle" placeholder="Book Title" required>
-          <div class="stars" id="ratingStars">
+          <h4><i class="fas fa-comment"></i> Leave a Review</h4>
+          <input type="text" id="name" class="form-control mb-3" placeholder="Your Name (optional)">
+          <input type="text" id="bookTitle" class="form-control mb-3" placeholder="Book Title" required>
+          <div class="stars mb-3" id="ratingStars">
             <span class="star" data-value="1">★</span>
             <span class="star" data-value="2">★</span>
             <span class="star" data-value="3">★</span>
             <span class="star" data-value="4">★</span>
             <span class="star" data-value="5">★</span>
           </div>
-          <textarea id="reviewText" rows="5" placeholder="Write your review here..."></textarea>
-          <button onclick="submitReview()">Submit Review</button>
-        </div>
-    
-        <div class="reviews" id="reviewList">
-          <!-- Reviews will be injected here -->
+          <textarea id="reviewText" rows="5" class="form-control mb-3" placeholder="Write your review here..."></textarea>
+          <button class="btn btn-primary" onclick="submitReview()">Submit Review</button>
         </div>
       </div>
+      
+   
+        <div class="col"><br><br>
+          <h5>Your Reviews</h5>
+          <div class="reviews" id="reviewList">
+           
+            <!-- Reviews will be injected here -->
+          </div>
+        </div>
+    </div>
+        
+    </div>
       <footer>
         <div class="container">
           <div class="row">
@@ -168,5 +178,6 @@
         </div>
       </footer>
       <script src="assets/js/review.js"></script>
+      <script src="assets/js/books.js"></script>
     </body>
     </html>

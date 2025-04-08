@@ -1,38 +1,4 @@
-body { 
-    font-family: "Poppins", sans-serif;
-    background: #f9f9f9;
-    margin: 0;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .review-container {
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .review-form {
-    background: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
-  }
-  
-  .review-form input,
-  .review-form textarea,
-  .review-form button{
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-  
+
   .stars {
     display: flex;
     gap: 5px;
