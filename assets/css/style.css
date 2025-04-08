@@ -268,4 +268,11 @@ footer div button{
 }
 #bks{
   min-height: 450px; 
+  cursor: pointer;
+}
+.col-md-7{
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow-y: auto; 
+
 }
