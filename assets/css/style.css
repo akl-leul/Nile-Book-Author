@@ -1,16 +1,10 @@
-
-  .stars {
-    display: flex;
-    gap: 5px;
-    font-size: 2.5rem;
-    margin-top: 10px;
+body { 
+    font-family: "Poppins", sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 20px;
   }
-  
-  .star {
-    cursor: pointer;
-    color: #ccc;
-  }
-  
+   
   .star.selected {
     color: gold;
   }
