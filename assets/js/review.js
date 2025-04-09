@@ -302,11 +302,13 @@ function showBookDetails() {
       </div>`;
     selectedBookName.textContent = `Reviewing: ${selectedBook}`;
     displayReviews(selectedBook);
-  } else {
+  }
+  else{
     bookDetails.innerHTML = "";
     selectedBookName.textContent = "";
-    document.getElementById("reviewList").innerHTML = "";
+    document.getElementById("reviewList").innerHTML = ""; 
   }
+  
 }
 
 function renderStars() {
@@ -386,7 +388,8 @@ function displayReviews(book) {
       <p>${r.review}</p>  
       <p class="mb-1">Rating: ${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</p> 
       <p class="mb-1">By ${r.name} <small> on ${r.date}</small></p>
-    </li>
+
+    </li> <br>
   `).join("");
 }
 
@@ -400,4 +403,5 @@ Object.keys(books).forEach(bookTitle => {
   const option = document.createElement('option');
   option.value = bookTitle;
   bookList.appendChild(option);
+ 
 });
