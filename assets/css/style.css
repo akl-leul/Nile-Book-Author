@@ -286,4 +286,7 @@ footer div button{
 .img-fluid{
   width: 30%;
   height: auto;
+} 
+.card-body i{
+  color: #f26430;
 }
