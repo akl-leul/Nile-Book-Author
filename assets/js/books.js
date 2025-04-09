@@ -84,6 +84,45 @@ const books = {
             rating: "4.6",
             image: "assets/img/richest-man-in-babylon.png",
         },
+        "Neuromancer": {
+    title: "Neuromancer",
+    description: "Neuromancer is a cyberpunk novel by William Gibson that explores the world of artificial intelligence, virtual reality, and cyberspace, following a washed-up computer hacker named Case as he is hired for a heist in cyberspace.",
+    authorName: "William Gibson",
+    authorImage: "assets/img/william-gibson.jpg",
+    genre: "Science Fiction, Cyberpunk",
+    language: "English",
+    format: "Hardcover, Paperback, eBook, Audiobook",
+    year: 1984,
+    rating: "4.5",
+    image: "assets/img/neuromancer.png"
+        },
+
+"Hyperion": {
+    title: "Hyperion",
+    description: "Hyperion is the first book in the Hyperion Cantos by Dan Simmons. It is a complex, multi-layered science fiction novel that follows seven pilgrims as they journey to the distant planet Hyperion, sharing their stories along the way.",
+    authorName: "Dan Simmons",
+    authorImage: "assets/img/dan-simmons.jpg",
+    genre: "Science Fiction, Space Opera",
+    language: "English",
+    format: "Hardcover, Paperback, eBook, Audiobook",
+    year: 1989,
+    rating: "4.6",
+    image: "assets/img/hyperion.png"
+},
+
+"Dune": {
+    title: "Dune",
+    description: "Dune by Frank Herbert is a seminal science fiction epic that delves into politics, religion, and ecology, set on the desert planet Arrakis. It follows Paul Atreides as he navigates the complexities of power, survival, and destiny.",
+    authorName: "Frank Herbert",
+    authorImage: "assets/img/frank-herbert.jpg",
+    genre: "Science Fiction, Space Opera",
+    language: "English",
+    format: "Hardcover, Paperback, eBook, Audiobook",
+    year: 1965,
+    rating: "4.8",
+    image: "assets/img/dune.png"
+},
+
         "Outlander": {
             title: "Outlander",
             description: "Outlander by Diana Gabaldon is a historical romance that combines time travel, adventure, and passion. Claire Randall, a 20th-century nurse, is mysteriously transported to 18th-century Scotland where she falls in love with a Highland warrior.",
