@@ -10,13 +10,18 @@ document.addEventListener('DOMContentLoaded', function () {
       const query = searchInput.value.trim().toLowerCase();
       if (query) {
         searchAcrossPages(query);
+      } else {
+        resultsList.innerHTML = '<li class="list-group-item no"><i class="fa-solid fa-triangle-exclamation"></i> Please enter a search term.</li>';
+        searchResults.style.display = 'block';
       }
+      searchInput.value = ''; // Clear the input field after submission
+      searchInput.focus(); // Refocus the input field
     });
   
     // Function to search across multiple pages
     function searchAcrossPages(query) {
       // List of pages to search in
-      const pages = ['index.html', 'books.html', 'review.html', 'about.html', 'contact.html', 'assets/js/books.js' ];
+      const pages = ['index.html', 'books.html', 'review.html', 'about.html', 'contact.html', 'assets/js/books.js', 'assets/js/review.js', 'assets/js/index.js', 'assets/js/contact.js'];
       let resultsFound = false;
   
       // Clear previous results
@@ -118,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(function () {
         element.style.backgroundColor = ''; // Remove highlight after 2 seconds
       }, 2000);
-    }
+    };
+    
   });
-
-  
