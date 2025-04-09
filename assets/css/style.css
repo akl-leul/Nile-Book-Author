@@ -265,7 +265,7 @@ footer div button{
   color: gold;
   font-size: 1.5rem;
 }
-#bks{
+.bks{
   min-height: 450px; 
   cursor: pointer;
 }
