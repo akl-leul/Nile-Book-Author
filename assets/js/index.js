@@ -105,46 +105,48 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error fetching page:', error));
     });
+
+    function searchBooksInList(query, callback) {
+      const bookItems = booksList.querySelectorAll('.card');  // Assuming each book has a class 'card'
+      let resultsFound = false;
+  
+      bookItems.forEach(function (bookItem) {
+        const title = bookItem.querySelector('.card-title').innerText.toLowerCase();  // Assuming book title has class 'card-title'
+        const author = bookItem.querySelector('.card-text').innerText.toLowerCase();  // Assuming book author has class 'card-text'
+        const content = bookItem.innerText.toLowerCase();  // Full content of the book item
+  
+        // Check if any part of the book matches the query
+        if (title.includes(query) || author.includes(query) || content.includes(query)) {
+          const resultItem = document.createElement('li');
+          resultItem.classList.add('list-group-item');
+  
+          // Create a clickable link for the result
+          const resultLink = document.createElement('a');
+          resultLink.href = `#${bookItem.id}`;  // Assuming each book has an ID for linking
+          resultLink.textContent = `Found in Book: ${title} by ${author}`;
+  
+          // Add event listener to scroll and highlight section when clicked
+          resultLink.addEventListener('click', function () {
+            // When clicked, scroll to the matching book item and highlight it
+            highlightAndScrollTo(bookItem);
+          });
+  
+          resultItem.appendChild(resultLink);
+          resultsList.appendChild(resultItem);
+          resultsFound = true;
+        }
+      });
+  
+      if (resultsFound) {
+        callback(true);
+      } else {
+        callback(false);
+      }
+    }
   }
 
   // Function to search for books in the #books-list div and include it in the global results
-  function searchBooksInList(query, callback) {
-    const bookItems = booksList.querySelectorAll('.card');  // Assuming each book has a class 'card'
-    let resultsFound = false;
-
-    bookItems.forEach(function (bookItem) {
-      const title = bookItem.querySelector('.card-title').innerText.toLowerCase();  // Assuming book title has class 'card-title'
-      const author = bookItem.querySelector('.card-text').innerText.toLowerCase();  // Assuming book author has class 'card-text'
-      const content = bookItem.innerText.toLowerCase();  // Full content of the book item
-
-      // Check if any part of the book matches the query
-      if (title.includes(query) || author.includes(query) || content.includes(query)) {
-        const resultItem = document.createElement('li');
-        resultItem.classList.add('list-group-item');
-
-        // Create a clickable link for the result
-        const resultLink = document.createElement('a');
-        resultLink.href = `#${bookItem.id}`;  // Assuming each book has an ID for linking
-        resultLink.textContent = `Found in Book: ${title} by ${author}`;
-
-        // Add event listener to scroll and highlight section when clicked
-        resultLink.addEventListener('click', function () {
-          // When clicked, scroll to the matching book item and highlight it
-          highlightAndScrollTo(bookItem);
-        });
-
-        resultItem.appendChild(resultLink);
-        resultsList.appendChild(resultItem);
-        resultsFound = true;
-      }
-    });
-
-    if (resultsFound) {
-      callback(true);
-    } else {
-      callback(false);
-    }
-  }
+  
 
   // Function to escape special characters in regex
   function escapeRegExp(str) {
@@ -166,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
     element.scrollIntoView({ behavior: 'smooth' });
 
     // Highlight the element
-    element.style.backgroundColor = '#f0f8ff'; // Light blue background for highlight
+    element.style.backgroundColor = '#00f8ff'; // Light blue background for highlight
     setTimeout(function () {
       element.style.backgroundColor = ''; // Remove highlight after 2 seconds
     }, 2000);
