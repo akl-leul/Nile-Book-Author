@@ -1,5 +1,5 @@
 const books = {
-    richdad: {
+    "Rich Dad Poor Dad": {
         title: "Rich Dad Poor Dad",
         description: "Rich Dad Poor Dad is a personal finance book by Robert Kiyosaki. It advocates financial education and wealth-building through investing in assets like real estate and small businesses.",
         authorName: "Robert Kiyosaki",
@@ -12,7 +12,7 @@ const books = {
         image: "assets/img/rich-dad-poor-dad.png",
     },
     
-    romanceBook3: {
+    "Me Before You": {
         title: "Me Before You",
         description: "Me Before You by Jojo Moyes is a poignant love story between Louisa Clark, a quirky young woman, and Will Traynor, a successful man left paralyzed after an accident. The book explores themes of disability, independence, and the impact of love.",
         authorName: "Jojo Moyes",
@@ -24,7 +24,7 @@ const books = {
         rating: "4.6",
         image: "assets/img/me-before-you.png",
     },
-    milionaire: {
+    "The Millionaire Next Door": {
             title: "The Millionaire Next Door",
             description: "The Millionaire Next Door explores the habits and behaviors of wealthy individuals, emphasizing frugality, hard work, and smart financial decisions.",
             authorName: "Thomas J. Stanley & William D. Danko",
@@ -36,7 +36,7 @@ const books = {
             rating: "4.6",
             image: "assets/img/millionaire-next-door.png",
     },
-    intelligent: {
+    "The Intelligent Investor": {
             title: "The Intelligent Investor",
             description: "This classic book by Benjamin Graham teaches the principles of value investing and the importance of a long-term strategy for investors.",
             authorName: "Benjamin Graham",
@@ -48,7 +48,7 @@ const books = {
             rating: "4.8",
             image: "assets/img/intelligent-investor.png",
         },
-        the4hour: {
+        "Think and Grow Rich": {
             title: "Think and Grow Rich",
             description: "A timeless personal development book by Napoleon Hill that outlines principles for achieving wealth and success through mindset, goals, and action.",
             authorName: "Napoleon Hill",
@@ -60,7 +60,7 @@ const books = {
             rating: "4.7",
             image: "assets/img/think-grow-rich.png",
         },
-        the7habits: {
+        "Atomic Habits": {
             title: "Atomic Habits",
             description: "James Clear's book provides a comprehensive guide on how small habits can lead to massive personal and professional transformation over time.",
             authorName: "James Clear",
@@ -72,7 +72,7 @@ const books = {
             rating: "4.8",
             image: "assets/img/atomic-habits.png",
         },
-        therichestmaninbabylon: {
+        "The Richest Man in Babylon": {
             title: "The Richest Man in Babylon",
             description: "A classic book by George S. Clason that teaches timeless financial principles through parables set in ancient Babylon.",
             authorName: "George S. Clason",
@@ -84,7 +84,7 @@ const books = {
             rating: "4.6",
             image: "assets/img/richest-man-in-babylon.png",
         },
-        romanceBook4: {
+        "Outlander": {
             title: "Outlander",
             description: "Outlander by Diana Gabaldon is a historical romance that combines time travel, adventure, and passion. Claire Randall, a 20th-century nurse, is mysteriously transported to 18th-century Scotland where she falls in love with a Highland warrior.",
             authorName: "Diana Gabaldon",
@@ -96,7 +96,7 @@ const books = {
             rating: "4.7",
             image: "assets/img/outlander.png",
         },
-        thepyschologyofmoney: {
+        "The Psychology of Money": {
             title: "The Psychology of Money",
             description: "Morgan Housel discusses the emotional and psychological aspects of money and how human behavior influences financial decisions.",
             authorName: "Morgan Housel",
@@ -108,7 +108,7 @@ const books = {
             rating: "4.7",
             image: "assets/img/the-pyscholog-of-money.jpeg",
         },
-        youareabadassatmakingmoney: {
+        "You Are a Badass at Making Money": {
             title: "You Are a Badass at Making Money",
             description: "Jen Sincero's motivational book combines personal finance advice with self-development principles to inspire readers to achieve financial success.",
             authorName: "Jen Sincero",
@@ -120,7 +120,7 @@ const books = {
             rating: "4.5",
             image: "assets/img/you-are-a-badass.png",
         },
-        daretolead: {
+        "Dare to Lead": {
             title: "Dare to Lead",
             description: "Brené Brown focuses on leadership and the courage needed to lead, including discussions about vulnerability, trust, and courage in decision-making.",
             authorName: "Brené Brown",
@@ -132,7 +132,7 @@ const books = {
             rating: "4.8",
             image: "assets/img/dare-to-lead.png",
         },
-       the4hourworkweek:  {
+      "The 4-Hour Workweek":  {
             title: "The 4-Hour Workweek",
             description: "Tim Ferriss introduces unconventional strategies to achieve financial independence, emphasizing automation, outsourcing, and productivity hacks.",
             authorName: "Tim Ferriss",
@@ -144,7 +144,7 @@ const books = {
             rating: "4.6",
             image: "assets/img/4-hour-workweek.png",
         },
-        romanceBook5: {
+        "The Kiss Quotient": {
             title: "The Kiss Quotient",
             description: "The Kiss Quotient by Helen Hoang is a contemporary romance novel that follows Stella Lane, a successful woman with Asperger's, who hires a male escort to help her navigate the complexities of romantic and physical relationships.",
             authorName: "Helen Hoang",
@@ -156,7 +156,7 @@ const books = {
             rating: "4.5",
             image: "assets/img/the-kiss-quotient.png",
         },
-        principles: {
+       "Principles: Life and Work": {
             title: "Principles: Life and Work",
             description: "Ray Dalio shares the principles that guided his personal and professional life, offering practical insights into decision-making, business, and leadership.",
             authorName: "Ray Dalio",
@@ -168,7 +168,7 @@ const books = {
             rating: "4.7",
             image: "assets/img/principles.png",
         },
-       thesubtleartofnotgivingafuck: {
+     "The Subtle Art of Not Giving a Fuck": {
             title: "The Subtle Art of Not Giving a Fuck",
             description: "Mark Manson discusses the importance of embracing life's challenges, rejecting societal pressures, and focusing on what truly matters.",
             authorName: "Mark Manson",
@@ -180,7 +180,7 @@ const books = {
             rating: "4.5",
             image: "assets/img/subtle-art.png",
         },
-        romanceBook1: {
+        "Pride and Prejudice": {
             title: "Pride and Prejudice",
             description: "Pride and Prejudice is a classic romance novel by Jane Austen. It explores themes of love, reputation, and class as Elizabeth Bennet navigates her feelings for the proud and aloof Mr. Darcy.",
             authorName: "Jane Austen",
@@ -192,7 +192,7 @@ const books = {
             rating: "4.9",
             image: "assets/img/pride-and-prejudice.png",
         },
-        thetotal:{
+       "The Total Money Makeover":{
             title: "The Total Money Makeover",
             description: "Dave Ramsey's step-by-step plan to achieve financial freedom, get out of debt, and build wealth through a series of straightforward financial principles.",
             authorName: "Dave Ramsey",
@@ -205,7 +205,7 @@ const books = {
             image: "assets/img/total-money-makeover.png",
         },
          
-        romanceBook2: {
+        "The Fault in Our Stars": {
             title: "The Fault in Our Stars",
             description: "The Fault in Our Stars by John Green is a heart-wrenching romance about two teenagers, Hazel and Gus, who meet at a cancer support group and embark on a love story filled with beauty, heartbreak, and profound emotions.",
             authorName: "John Green",
@@ -217,7 +217,7 @@ const books = {
             rating: "4.7",
             image: "assets/img/the-fault-in-our-stars.png",
         },
-       themyth: {
+       "The E-Myth Revisited": {
             title: "The E-Myth Revisited",
             description: "Michael E. Gerber discusses how small businesses can avoid common pitfalls and become scalable and successful by focusing on systems and processes.",
             authorName: "Michael E. Gerber",
@@ -229,7 +229,7 @@ const books = {
             rating: "4.5",
             image: "assets/img/e-myth-revisited.png",
         },
-       artofwar: {
+       "the art of war": {
             title: "The Art of War",
             description: "Sun Tzu's ancient text on military strategy and leadership, often applied in modern business contexts for its lessons on competition and decision-making.",
             authorName: "Sun Tzu",
@@ -241,7 +241,7 @@ const books = {
             rating: "4.7",
             image: "assets/img/art-of-war.png",
         },
-        romanceBook: {
+        "the Note book": {
             title: "The Notebook",
             description: "The Notebook is a romantic novel by Nicholas Sparks. It tells the story of Noah and Allie, whose love story transcends time, obstacles, and life's challenges. Their passionate bond, rekindled years after they first met, is a timeless tale of enduring love.",
             authorName: "Nicholas Sparks",
@@ -384,3 +384,4 @@ function showBookDetails(bookKey) {
 
 // Initialize display with all books
 displayBooks();
+

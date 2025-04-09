@@ -84,32 +84,49 @@
           <i class="fa-solid fa-arrow-up"></i>
       </a>
   </div>
-  <div class="container-fluid">   
-    <div class="row align-items-start ">  
-      <div class="col">
-          <h4><i class="fas fa-comment"></i> Leave a Review</h4>
-          <input type="text" id="name" class="form-control mb-3" placeholder="Your Name (optional)">
-          <input type="text" id="bookTitle" class="form-control mb-3" placeholder="Book Title" required>
-          <div class="stars mb-3" id="ratingStars">
-            <span class="star" data-value="1">★</span>
-            <span class="star" data-value="2">★</span>
-            <span class="star" data-value="3">★</span>
-            <span class="star" data-value="4">★</span>
-            <span class="star" data-value="5">★</span>
-          </div>
-          <textarea id="reviewText" rows="5" class="form-control mb-3" placeholder="Write your review here..."></textarea>
-          <button class="btn btn-primary" onclick="submitReview()">Submit Review</button>
+  <br>
+  <div class="container bg-white rounded shadow p-4">
+    <h2 class="text-center mb-4">Book Review Portal</h2>
+
+    <!-- Book Selector -->
+    <div class="mb-4">
+      <label for="bookInput" class="form-label">Choose a Book:</label>
+      <input list="bookList" id="bookInput" class="form-control" placeholder="Start typing to search...">
+      <datalist id="bookList">
+        <!-- Book options will be populated here -->
+      </datalist>
+    </div>
+    
+
+    <!-- Book Details -->
+    <div id="bookDetails" class="mb-4"></div>
+
+    <!-- Review and Form Side by Side -->
+    <div class="row">
+      <!-- Review Form -->
+      <div class="col-md-6">
+        <h4>Add Your Review</h4>
+        <p id="selectedBookName" class="text-muted mb-2"></p>
+        <input type="text" id="reviewerName" class="form-control mb-3" placeholder="Your Name" />
+        <textarea id="reviewText" class="form-control mb-3" rows="3" placeholder="Your Review"></textarea>
+        
+            <label class="form-label">Rating:</label>
+        <div id="starRating" class="star-rating mb-3"></div>
        
-      </div>   
-      <div class="col">
-          <h5>Your Reviews</h5>
-          <div class="reviews" id="reviewList">
-            <!-- Reviews will be injected here -->
-          </div>
+      
+
+        <button class="btn btn-primary" onclick="submitReview()">Submit Review</button>
+      </div>
+
+      <!-- Review List -->
+      <div class="col-md-6">
+        <h4 class="mb-3">All Reviews</h4>
+        <ul id="reviewList" class="list-group"></ul>
       </div>
     </div>
-        
   </div>
+
+
       <footer>
         <div class="container">
           <div class="row">
@@ -171,7 +188,7 @@
           </div>
         </div>
       </footer>
-      <script src="assets/js/review.js"></script>
+      <script src="assets/js/review.js"></script> 
       <script src="assets/js/books.js"></script>
     </body>
     </html>
