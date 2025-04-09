@@ -326,7 +326,8 @@ function filterBooks(category, value) {
             } else if (typeof bookValue === 'number') {
                 return bookValue === Number(value);
             }
-            return false;
+            
+            return true;
         });
     }
 

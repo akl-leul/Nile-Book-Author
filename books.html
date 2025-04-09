@@ -109,7 +109,7 @@
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <div class="form-group">
-                            <input type="radio" name="category" value="All" id="genre" class="form-check-input" onclick="filterBooks('genre', 'All')"> All<br>
+                            <input type="radio" name="category" value="All" id="genre" class="form-check-input" onclick="filterBooks('', 'All')"> All<br>
                             <input type="radio" name="category" value="Fantasy" id="genre1" class="form-check-input" onclick="filterBooks('genre', 'Fantasy')"> Fantasy<br>
                             <input type="radio" name="category" value="Science Fiction" id="genre2" class="form-check-input" onclick="filterBooks('genre', 'Science Fiction')"> Science Fiction<br>
                             <input type="radio" name="category" value="Historical Fiction" id="genre3" class="form-check-input" onclick="filterBooks('genre', 'Historical Fiction')"> Historical Fiction<br>
@@ -134,11 +134,12 @@
                       <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <div class="form-group"> 
+                            <input type="radio" name="category" value="All" id="author" class="form-check-input" onclick="filterBooks('', 'All')"> All<br>
                             <input type="radio" name="category" value="Robert Kiyosaki" id="author1" class="form-check-input" onclick="filterBooks('authorName', 'Robert Kiyosaki')"> Robert Kiyosaki<br>
                             <input type="radio" name="category" value="Jojo Moyes" id="author2" class="form-check-input" onclick="filterBooks('authorName', 'Jojo Moyes')"> Jojo Moyes<br>
                             <input type="radio" name="category" value="George" id="author3" class="form-check-input" onclick="filterBooks('authorName', 'George')"> George<br>
                             <input type="radio" name="category" value="Diana Gabaldon" id="author4" class="form-check-input" onclick="filterBooks('authorName', 'Diana Gabaldon')"> Diana Gabaldon<br>   
-                            <input type="radio" name="category" value="James Clear" id="author13" class="form-check-input" onclick="filterBooks('authorName', 'James Clear')"> James Clear<br> 
+                            <input type="radio" name="category" value="James Clear" id="author5" class="form-check-input" onclick="filterBooks('authorName', 'James Clear')"> James Clear<br> 
                         </div>
                          
                         </div>
@@ -155,7 +156,8 @@
                       </h2>
                       <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          <div class="form-group"> 
+                          <div class="form-group">
+                            <input type="radio" name="category" value="All" id="language" class="form-check-input" onclick="filterBooks('', 'All')"> All<br> 
                             <input type="radio" name="category" value="English" id="language1" class="form-check-input" onclick="filterBooks('language', 'English')"> English<br>
                             <input type="radio" name="category" value="Spanish" id="language2" class="form-check-input" onclick="filterBooks('language', 'Spanish')"> Spanish<br>
                             <input type="radio" name="category" value="French" id="language3" class="form-check-input" onclick="filterBooks('language','French' )"> French<br>
@@ -178,7 +180,7 @@
                       <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <div class="form-group">
-                          
+                            <input type="radio" name="category" value="All" id="rating" class="form-check-input" onclick="filterBooks('', 'All')"> All<br>
                             <input type="radio" name="category" value="rating" id="rating1" class="form-check-input" onclick="filterBooks('rating', '1.0-1.9')"> 1.0 - 1.9<br>
 <input type="radio" name="category" value="rating" id="rating2" class="form-check-input" onclick="filterBooks('rating', '2.0-2.9')"> 2.0 - 2.9<br>
 <input type="radio" name="category" value="rating" id="rating3" class="form-check-input" onclick="filterBooks('rating', '3.0-3.9')"> 3.0 - 3.9<br>
