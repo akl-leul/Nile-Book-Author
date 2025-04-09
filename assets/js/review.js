@@ -306,7 +306,7 @@ function showBookDetails() {
   else{
     bookDetails.innerHTML = "";
     selectedBookName.textContent = "";
-    document.getElementById("reviewList").innerHTML = ""; 
+    document.getElementById("reviewList").innerHTML = "Please select a book to see reviews."; 
   }
   
 }

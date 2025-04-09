@@ -86,7 +86,7 @@
   </div>
   <br>
   <div class="container bg-white rounded shadow p-4">
-    <h2 class="text-center mb-4">Book Review Portal</h2>
+    <h2 class="text-center mb-4"><i class="fas fa-book-open"></i> Book Review Portal</h2>
 
     <!-- Book Selector -->
     <div class="mb-4">
@@ -105,9 +105,9 @@
     <div class="row">
       <!-- Review Form -->
       <div class="col-md-6">
-        <h4>Add Your Review</h4>
+        <h4><i class="fas fa-plus"></i> Add Your Review</h4>
         <p id="selectedBookName" class="text-muted mb-2"></p>
-        <input type="text" id="reviewerName" class="form-control mb-3" placeholder="Your Name" />
+        <input type="text" id="reviewerName" class="form-control mb-3" placeholder="Your Name (Optional)" />
         <textarea id="reviewText" class="form-control mb-3" rows="3" placeholder="Your Review"></textarea>
         
             <label class="form-label">Rating:</label>
@@ -115,12 +115,12 @@
        
       
 
-        <button class="btn btn-primary" onclick="submitReview()">Submit Review</button>
+        <button class="btn btn-primary" onclick="submitReview()">Submit Review <i class="fas fa-paper-plane"></i></button>
       </div>
 
       <!-- Review List -->
       <div class="col-md-6">
-        <h4 class="mb-3">All Reviews</h4> 
+        <h4 class="mb-3"><i class="fas fa-list"></i> All Reviews</h4> 
         <ul id="reviewList" class="list-group">
           <!-- Reviews will be populated here -->
            
