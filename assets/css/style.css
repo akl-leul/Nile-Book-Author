@@ -176,7 +176,7 @@ footer div button{
 #downarrow a{
     font-size: 1.7rem;
     color: #333;
-    cursor: pointer;
+    cursor: pointer; 
     transition: all 0.3s ease-in-out;
     animation: movedwn 1s ease-in-out infinite alternate;
 }
