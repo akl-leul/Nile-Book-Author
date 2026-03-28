@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Review Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/image/nile----logo--NEW.jpg"/>
+</head>
+<body>
+
+  <div class="container">
+    <h1>📚Book Reviews</h1>
+
+    <div class="review-form">
+      <h2>Leave a Review</h2>
+      <input type="text" id="name" placeholder="Your Name (optional)">
+      <input type="text" id="bookTitle" placeholder="Book Title" required>
+      <div class="stars" id="ratingStars">
+        <span class="star" data-value="1">★</span>
+        <span class="star" data-value="2">★</span>
+        <span class="star" data-value="3">★</span>
+        <span class="star" data-value="4">★</span>
+        <span class="star" data-value="5">★</span>
+      </div>
+      <textarea id="reviewText" rows="5" placeholder="Write your review here..."></textarea>
+      <button onclick="submitReview()">Submit Review</button>
+    </div>
+
+    <div class="reviews" id="reviewList">
+      <!-- Reviews will be injected here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
